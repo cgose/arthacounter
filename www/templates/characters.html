@@ -1,0 +1,11 @@
+<ion-view view-title="Characters">
+  <ion-content>
+    <div class="list list-inset">
+        <div class="item" ng-repeat="character in characters.list track by $index">
+            <a ui-sref="artha({characterID: $index})">{{character}}</a>
+        </div>
+        <div class="item">
+            <a ui-sref="new-character" class="button button-positive button-block">Add Character</a>
+        </div>
+    </div>   
+</ion-view>
